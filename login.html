@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solo Leveling Fitness - Login</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <style>
+    .login-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: var(--bg-color);
+      text-align: center;
+    }
+    
+    .login-logo {
+      margin-bottom: 30px;
+      margin-top: -10px;
+      position: relative;
+    }
+    
+    .login-logo::before {
+      content: '';
+      position: absolute;
+      top: -16px;
+      left: -12px;
+      right: -12px;
+      bottom: -8px;
+      border-radius: 50%;
+      border: 2px solid var(--primary-color);
+      animation: circleZoom 2s infinite;
+      opacity: 0.7;
+    }
+    
+    @keyframes circleZoom {
+      0% {
+        transform: scale(0.9);
+        opacity: 0.3;
+      }
+      50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+      }
+      100% {
+        transform: scale(0.9);
+        opacity: 0.3;
+      }
+    }
+    
+    .login-logo img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      box-shadow: 0 0 20px var(--primary-glow);
+    }
+    
+    .login-title {
+      color: var(--primary-color);
+      font-size: 2rem;
+      margin-bottom: 40px;
+      text-shadow: 0 0 10px var(--primary-glow);
+      letter-spacing: 2px;
+    }
+    
+    .login-subtitle {
+      color: var(--text-color);
+      margin-bottom: 40px;
+      max-width: 80%;
+      line-height: 1.6;
+      opacity: 0.8;
+    }
+    
+    .login-button {
+      display: flex !important;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-logo">
+      <img src="attached_assets/IMG_20250507_133213.jpg" alt="Solo Fitness Logo">
+    </div>
+    <h1 class="login-title">SOLO FITNESS</h1>
+    <p class="login-subtitle">Track your workout progress, level up, and become stronger every day.</p>
+    
+    <div id="g_id_onload"
+         data-client_id="227861550655-ebiuh8pqqdruchrat8dtbeq8djik8o6t.apps.googleusercontent.com"
+         data-context="signin"
+         data-ux_mode="popup"
+         data-callback="handleCredentialResponse"
+         data-auto_prompt="false">
+    </div>
+
+    <div class="g_id_signin login-button"
+         data-type="standard"
+         data-shape="rectangular"
+         data-theme="outline"
+         data-text="signin_with"
+         data-size="large"
+         data-logo_alignment="left">
+    </div>
+    
+    </div>
+
+  <div class="footer-credit">
+    Made by Atharva...
+  </div>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+    
+    .footer-credit {
+      font-family: 'VT323', monospace;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: var(--gold-color);
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      text-align: right;
+      text-shadow: 0 0 10px rgba(255, 186, 0, 0.7);
+      animation: footerGlow 2s infinite alternate;
+      z-index: 10;
+    }
+    
+    @keyframes footerGlow {
+      from {
+        text-shadow: 0 0 5px rgba(255, 186, 0, 0.5);
+      }
+      to {
+        text-shadow: 0 0 15px rgba(255, 215, 0, 0.8), 0 0 20px rgba(255, 215, 0, 0.4);
+      }
+    }
+  </style>
+
+  <script src="auth.js"></script>
+</body>
+</html>

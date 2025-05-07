@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solo Leveling Fitness</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <div class="top-bar">
+        <h1>SOLO FITNESS</h1>
+        <button id="logoutBtn">LOGOUT</button>
+      </div>
+      <div class="status-box">
+        <h2>STATUS</h2>
+      </div>
+    </header>
+
+    <div class="profile-section">
+      <div class="profile-pic">
+        <img id="profilePic" src="https://i.imgur.com/WpMwd3T.jpg" alt="Profile">
+      </div>
+      <div class="user-info">
+        <h2 id="userName">HUNTER</h2>
+        <p id="userTag">@HUNTER_488</p>
+      </div>
+      <div class="progress-bars">
+        <div class="hp-bar">
+          <div class="progress" style="width: 100%"></div>
+          <span>HP 3/3</span>
+        </div>
+        <div class="exp-bar">
+          <div class="progress" style="width: 60%"></div>
+          <span>0.5 TO RANK UP</span>
+        </div>
+      </div>
+      <div class="stats-box">
+        <div class="stat">
+          <span class="label">RANK</span>
+          <span class="value">E</span>
+        </div>
+        <div class="stat">
+          <span class="label">STREAK</span>
+          <span class="value">N/A</span>
+        </div>
+        <div class="stat">
+          <span class="label">GLOBAL #</span>
+          <span class="value">0</span>
+        </div>
+        <div class="stat">
+          <span class="label">GOLD</span>
+          <span class="value">0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="daily-tasks">
+      <h2>TODAY'S TASK</h2>
+      <div class="tasks-grid">
+        <div class="task-card">
+          <span class="number">10</span>
+          <span class="exercise">PUSHUP</span>
+          <div class="progress-indicator"></div>
+        </div>
+        <div class="task-card">
+          <span class="number">10</span>
+          <span class="exercise">SITUPS</span>
+          <div class="progress-indicator"></div>
+        </div>
+        <div class="task-card">
+          <span class="number">10</span>
+          <span class="exercise">SQUATS</span>
+          <div class="progress-indicator"></div>
+        </div>
+        <div class="task-card">
+          <span class="number">1.0</span>
+          <span class="exercise">KM RUN</span>
+          <div class="progress-indicator"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="history-section">
+      <h2>WORKOUT HISTORY</h2>
+      <div class="history-list" id="historyList">
+        <!-- History items will be populated here -->
+      </div>
+    </div>
+
+    <nav class="bottom-nav">
+      <button class="nav-btn" data-page="ranking">
+        <span class="icon">⭐</span>
+        RANKING
+      </button>
+      <button class="nav-btn" data-page="profile">
+        <span class="icon">👤</span>
+        PROFILE
+      </button>
+      <button class="nav-btn" data-page="settings">
+        <span class="icon">⚙️</span>
+        SETTINGS
+      </button>
+    </nav>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
